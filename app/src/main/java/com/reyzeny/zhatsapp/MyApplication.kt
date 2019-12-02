@@ -15,7 +15,7 @@ class MyApplication : Application() {
         super.onCreate()
         AppCenter.start(this, "933d959d-cdcd-4384-bc04-68862cbd3c81", Analytics::class.java, Crashes::class.java)
         appComponent = DaggerAppComponent.builder()
-            .network(NetworkModule("ksjlf"))
+            //.network(NetworkModule("ksjlf"))
             .build()
     }
 
